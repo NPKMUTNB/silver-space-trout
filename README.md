@@ -1,43 +1,61 @@
-# GitHub Codespaces ♥️ React
 
-Welcome to your shiny new Codespace running React! We've got everything fired up and running for you to explore React.
+# silver-space-trout (React + Redux + Vite)
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## คำอธิบายโปรเจ็ค
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+โปรเจ็คนี้เป็นตัวอย่างแอปพลิเคชัน React ที่ใช้ Redux สำหรับการจัดการ state และพัฒนาโดยใช้ Vite เพื่อความรวดเร็วในการ build และพัฒนา เหมาะสำหรับผู้ที่ต้องการศึกษาหรือเริ่มต้นสร้างแอป React ที่มีการจัดการ state แบบสมัยใหม่
 
-This project was bootstrapped for you with [Vite](https://vitejs.dev/).
+### ฟีเจอร์หลัก
+- ตัวอย่างการใช้งาน Redux (counter, todo list)
+- โครงสร้างโปรเจ็คแยกไฟล์ชัดเจน (components, store)
+- ใช้ Vite สำหรับพัฒนาและ build
+- ตัวอย่างการเขียนเทสด้วย React Testing Library
 
-## Available Scripts
+## วิธีเริ่มต้นใช้งาน
 
-In the project directory, you can run:
+1. ติดตั้ง dependencies
+	```bash
+	npm install
+	```
+2. รันเซิร์ฟเวอร์สำหรับพัฒนา
+	```bash
+	npm run dev
+	```
+	เปิดเบราว์เซอร์ไปที่ [http://localhost:5173/](http://localhost:5173/)
 
-### `npm start`
+3. รันเทส
+	```bash
+	npm test
+	```
 
-We've already run this for you in the `Codespaces: server` terminal window below. If you need to stop the server for any reason you can just run `npm start` again to bring it back online.
+4. สร้างไฟล์สำหรับ production
+	```bash
+	npm run build
+	```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/](http://localhost:3000/) in the built-in Simple Browser (`Cmd/Ctrl + Shift + P > Simple Browser: Show`) to view your running application.
+## โครงสร้างโปรเจ็ค
 
-The page will reload automatically when you make changes.\
-You may also see any lint errors in the console.
+- `src/` โค้ดหลักของแอปพลิเคชัน
+  - `components/` คอมโพเนนต์ UI เช่น Counter, TodoList
+  - `store/` การตั้งค่า Redux store และ slice ต่าง ๆ
+- `public/` ไฟล์ static เช่น รูปภาพ favicon
+- `index.html` หน้า HTML หลัก
+- `package.json` ข้อมูล dependencies และ scripts
 
-### `npm test`
+## เทคโนโลยีที่ใช้
+- React
+- Redux Toolkit
+- Vite
+- React Testing Library
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ข้อมูลเพิ่มเติม
 
-### `npm run build`
+- [React documentation](https://react.dev/)
+- [Redux Toolkit documentation](https://redux-toolkit.js.org/)
+- [Vite documentation](https://vitejs.dev/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-## Learn More
+---
+โปรเจ็คนี้เหมาะสำหรับการเรียนรู้และต่อยอดพัฒนาแอปพลิเคชัน React ที่มีการจัดการ state แบบมืออาชีพ
 
 You can learn more in the [Vite documentation](https://vitejs.dev/guide/).
 
